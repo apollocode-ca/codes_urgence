@@ -1,0 +1,67 @@
+name: somum # TODO: replace with the name of the project.
+description: Control your bathub with somum # TODO: replace with the description of the project.
+publish_to: "none"
+version: 1.0.0+0
+environment:
+  sdk: ">=3.1.4 <4.0.0"
+dependencies:
+  apollocode_dart_utilities:
+    git:
+      url: https://apollocode-ca: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@github.com/apollocode-ca/dart_utilities
+      ref: 4.3.0
+  apollocode_flutter_utilities:
+    git:
+      url: https://apollocode-ca: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@github.com/apollocode-ca/apollocode_flutter_utilities.git
+      ref: 13.1.17
+  somum_utilities:
+    path: ../somum_utilities/
+  beamer: ^2.0.0-dev.0
+  cached_network_image: ^3.3.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  get_it: ^7.6.4
+  google_fonts: ^4.0.4
+  http: ^1.1.0
+  icons_launcher: ^2.1.4
+  universal_html: ^2.2.4
+  auth0_flutter: ^1.3.1
+  flex_color_picker: ^3.3.0
+dependency_overrides: 
+  http: ^1.1.0
+  intl: ^0.18.1
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+flutter:
+  assets:
+    - assets/
+    - assets/logos/
+    - assets/images/
+    - assets/icons/
+  generate: true
+  uses-material-design: true
+# Each time the configuration changes, execute the following in a terminal:
+#   flutter pub get
+#   flutter pub run icons_launcher:create
+icons_launcher:
+  image_path: "assets/logos/icon_full.png" # TODO: replace with the logo of the project.
+  platforms: # TODO: enable or disable platforms depending on which ones will be supported by the project.
+    android:
+      enable: true
+      adaptive_background_color: "#17130E"
+      adaptive_foreground_image: "assets/logos/icon_transparent.png"
+      adaptive_monochrome_image: "assets/logos/icon_transparent.png"
+      adaptive_round_image: "assets/logos/icon_transparent.png"
+    ios:
+      enable: true
+    linux:
+      enable: false
+    macos:
+      enable: false
+    web:
+      enable: true
+    windows:
+      enable: false
