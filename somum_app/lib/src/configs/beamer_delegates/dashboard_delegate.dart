@@ -1,5 +1,5 @@
 import 'package:beamer/beamer.dart';
-import 'package:somum/src/layouts/dashboard/pages/dashboard_tub_list_page.dart';
+import 'package:somum/src/layouts/dashboard/pages/dashboard_codes_list_page.dart';
 import 'package:flutter/material.dart';
 
 /// Dashboard flow delegate.
@@ -12,7 +12,7 @@ BeamerDelegate dashboardDelegate() {
           return const BeamPage(
             key: ValueKey('dashboard-home'),
             type: BeamPageType.fadeTransition,
-            child: DashboardListPage(),
+            child: DashboardCodesListPage(),
           );
         },
       },

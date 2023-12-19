@@ -64,4 +64,35 @@ extension CodeTypesExtension on CodeType {
         return 'unknown';
     }
   }
+
+  Color color(BuildContext context) {
+    switch (this) {
+      case CodeType.silver:
+        return const Color(0xFFD9D9D9);
+      case CodeType.blue:
+        return const Color(0xFF00B0FF);
+      case CodeType.grey:
+        return const Color(0xFF7B7B79);
+      case CodeType.mauve:
+        return const Color(0xFF693C89);
+      case CodeType.orange:
+        return const Color(0xFFFF6D00);
+      case CodeType.red:
+        return const Color(0xFFD50000);
+      case CodeType.white:
+        return const Color(0xFFFFFFFF);
+      case CodeType.brown:
+        return const Color(0xFF795548);
+      case CodeType.yellow:
+        return const Color(0xFFFFEB3B);
+      case CodeType.black:
+        return const Color(0xFF000000);
+      case CodeType.pink:
+        return const Color(0xFFE91E63);
+      case CodeType.green:
+        return const Color(0xFF4CAF50);
+      default:
+        return Colors.blue;
+    }
+  }
 }
