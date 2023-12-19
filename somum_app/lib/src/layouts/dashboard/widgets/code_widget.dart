@@ -1,7 +1,6 @@
 import 'package:apollocode_flutter_utilities/apollocode_flutter_utilities.dart';
-import 'package:somum/src/utilities/enums.dart';
+import 'package:somum_utilities/enums.dart';
 import 'package:somum/src/utilities/extensions/code_types_extension.dart';
-import 'package:somum/src/widgets/buttons/custom_round_outlined_button.dart';
 import 'package:flutter/material.dart';
 
 class CodeWidget extends StatelessWidget {

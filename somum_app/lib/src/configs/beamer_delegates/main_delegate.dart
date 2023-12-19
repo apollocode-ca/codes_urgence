@@ -2,6 +2,8 @@ import 'package:somum/src/layouts/dashboard/dashboard_layout.dart';
 import 'package:somum/src/layouts/code/code_layout.dart';
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
+import 'package:somum/src/utilities/guards/code_guard.dart';
+import 'package:somum_utilities/somum_utilities.dart';
 
 final mainDelegate = BeamerDelegate(
   initialPath: '/dashboard/home',
@@ -15,10 +17,14 @@ final mainDelegate = BeamerDelegate(
         );
       },
       '/code/:code/*': (context, state, data) {
+        var code = state.pathParameters['code'].toString();
         return BeamPage(
           key: const ValueKey('code'),
           type: BeamPageType.fadeTransition,
-          child: CodeLayout(),
+          child: CodeGuard(
+            code: CodeType.values[int.parse(code)],
+            body: CodeLayout(),
+          ),
         );
       },
     },

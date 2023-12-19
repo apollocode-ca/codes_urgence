@@ -1,4 +1,4 @@
-import 'package:somum/src/utilities/enums.dart';
+import 'package:somum_utilities/enums.dart';
 import 'package:apollocode_flutter_utilities/apollocode_flutter_utilities.dart';
 import 'package:flutter/material.dart';
 

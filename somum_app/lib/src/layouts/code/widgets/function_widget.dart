@@ -1,6 +1,6 @@
 import 'package:apollocode_flutter_utilities/apollocode_flutter_utilities.dart';
 import 'package:somum/src/layouts/code/widgets/function_icon_widget.dart';
-import 'package:somum/src/utilities/enums.dart';
+import 'package:somum_utilities/enums.dart';
 import 'package:somum/src/utilities/extensions/code_types_extension.dart';
 import 'package:flutter/material.dart';
 

@@ -1,4 +1,4 @@
-import 'package:somum/src/utilities/enums.dart';
+import 'package:somum_utilities/enums.dart';
 import 'package:somum/src/utilities/inherited_widgets/l10n_provider.dart';
 import 'package:flutter/material.dart';
 

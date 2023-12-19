@@ -8,8 +8,8 @@ import 'package:somum/src/widgets/title_widget.dart';
 import 'package:flutter/material.dart';
 
 /// Bluethoot pairing sequence
-class DashboardCodesListPage extends StatelessWidget {
-  const DashboardCodesListPage({
+class CodeFloorsPage extends StatelessWidget {
+  const CodeFloorsPage({
     super.key,
   });
 

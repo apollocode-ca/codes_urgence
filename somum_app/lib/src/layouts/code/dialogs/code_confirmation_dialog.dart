@@ -1,6 +1,6 @@
 import 'package:beamer/beamer.dart';
 import 'package:somum/src/layouts/code/widgets/function_widget.dart';
-import 'package:somum/src/utilities/enums.dart';
+import 'package:somum_utilities/enums.dart';
 import 'package:flutter/material.dart';
 
 showFunctionDialog(BuildContext context, CodeType type) {

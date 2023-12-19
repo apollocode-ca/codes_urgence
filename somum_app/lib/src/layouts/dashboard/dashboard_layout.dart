@@ -1,8 +1,12 @@
+import 'dart:ui';
+
 import 'package:beamer/beamer.dart';
 import 'package:somum/src/configs/beamer_delegates/dashboard_delegate.dart';
 import 'package:somum/src/configs/services.dart';
+import 'package:somum/src/layouts/dashboard/widgets/universal_appbar.dart';
 import 'package:somum/src/utilities/figma_manager.dart';
 import 'package:apollocode_flutter_utilities/apollocode_flutter_utilities.dart';
+import 'package:somum/src/utilities/inherited_widgets/l10n_provider.dart';
 import 'package:somum/src/widgets/buttons/custom_round_outlined_button.dart';
 import 'package:somum/src/widgets/logo_widget.dart';
 import 'package:flutter/material.dart';
@@ -23,28 +27,7 @@ class DashboardLayout extends StatelessWidget {
       child: Scaffold(
         extendBody: true,
         extendBodyBehindAppBar: false,
-        appBar: AppBar(
-          elevation: 0,
-          leadingWidth: 80,
-          backgroundColor: Colors.transparent,
-          toolbarHeight: 85,
-          title: CustomRoundOutlinedButton(
-            size: const Size(48, 65),
-            child: const Icon(Icons.logout),
-            // onPressed: () => services.auth.disconnectUser(() =>
-            //     Beamer.of(context, root: true)
-            //         .beamToReplacementNamed("/auth/home")),
-            onPressed: () => Beamer.of(context, root: true)
-                .beamToReplacementNamed("/auth/home"),
-          ),
-          actions: const [
-            Padding(
-              padding: EdgeInsets.all(12),
-              child: LogoWidget(),
-            )
-          ],
-          centerTitle: false,
-        ),
+        appBar: universalAppBar(context),
         body: ScrollConfiguration(
           behavior: scrollConfiguration.copyWith(
             scrollbars: false,
